@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta content="text/html;charset=UTF-8"/>
+		<title th:text="登录页面"></title>
+	</head>
+	<body>
+		<h1 th:text="请登录"></h1>
+		<form action="login" method="post">
+			<table>
+				<tr>
+					<td th:text="用户"></td>
+					<td><input type="text" name="loginName" id="loginName"/></td>
+				</tr>
+				<tr>
+					<td th:text="密码"></td>
+					<td><input type="text" name="pwd" id="pwd"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="" th:value="登录"/></td>
+				</tr>
+			</table>
+			<input type="hidden" th:value="${_csrf.token}" th:name="${_csrf.parameterName}">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/html/
+    suffix: .html
+    encoding: UTF-8
+#  security:
+#    user:
+#      name: javaboy
+#      password: 123
